@@ -85,8 +85,8 @@ public class SHNerfAmethyst extends JavaPlugin implements Listener {
 
         // Calculer la quantité à dropper
         int fortuneLevel = 0;
-        if (fortuneAffectsAmount && itemInHand.getType() != Material.AIR && itemInHand.hasItemMeta() && itemInHand.getItemMeta().hasEnchant(Enchantment.LOOT_BONUS_BLOCKS)) {
-            fortuneLevel = itemInHand.getItemMeta().getEnchantLevel(Enchantment.LOOT_BONUS_BLOCKS);
+        if (fortuneAffectsAmount && itemInHand.getType() != Material.AIR && itemInHand.hasItemMeta() && itemInHand.getItemMeta().hasEnchant(Enchantment.FORTUNE)) {
+            fortuneLevel = itemInHand.getItemMeta().getEnchantLevel(Enchantment.FORTUNE);
         }
 
         int amountToDrop;
