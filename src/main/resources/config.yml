@@ -1,0 +1,16 @@
+# Configuration pour SHNerfAmethyst
+
+amethyst-cluster:
+  # Quantité minimale de fragments d'améthyste à dropper (0 pour potentiellement rien)
+  min-drops: 1
+  # Quantité maximale de fragments d'améthyste à dropper
+  max-drops: 1
+  # Est-ce que l'enchantement Fortune affecte la quantité de drops ?
+  # Si true, Fortune peut augmenter le nombre de drops, jusqu'à max-drops.
+  # Si false, Fortune n'a aucun effet sur la quantité (mais Silk Touch fonctionnera toujours pour obtenir le bloc).
+  fortune-affects-amount: false
+  # Message affiché au joueur lorsqu'il casse un cluster d'améthyste (laisser vide pour désactiver)
+  # Placeholders: %amount% = quantité droppée
+  # Exemple: "&7Vous avez obtenu &b%amount% &7fragments d'améthyste."
+  # Par défaut, pas de message comme demandé, mais l'option est là.
+  break-message: ""
